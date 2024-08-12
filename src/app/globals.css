@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind container;
+@tailwind memory;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* color: black; */
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* Night Sky Background with Stars and Moving Clouds */
+.timeline-background {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #001d3d, #1b263b); /* Dark blue gradient for the night sky */
+  z-index: 0; /* Ensure the background stays behind the content */
+  /* Full height for background */
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Stars layer above the background but below the content */
+  animation: twinkle 2s infinite ease-in-out alternate;
+}
+
+.star {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  animation: blink 2s infinite ease-in-out alternate;
+}
+
+.star:nth-child(1) { top: 20%; left: 25%; animation-duration: 2.5s; }
+.star:nth-child(2) { top: 50%; left: 50%; animation-duration: 3s; }
+.star:nth-child(3) { top: 30%; left: 75%; animation-duration: 1.5s; }
+.star:nth-child(4) { top: 70%; left: 10%; animation-duration: 4s; }
+.star:nth-child(5) { top: 80%; left: 90%; animation-duration: 2.8s; }
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('https://ugc.berkeley.edu/wp-content/uploads/2016/01/thunderstorm-3625405_1920.jpg') repeat; /* Substitute with a working cloud texture URL */
+  opacity: 0.3; /* Slight transparency for clouds */
+  z-index: 2; /* Clouds layer above stars */
+  animation: moveClouds 60s linear infinite;
+}
+
+
+@keyframes moveClouds {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+/* modal */
+@keyframes fallAndClose {
+  0% {
+    transform: translate(-50%, -300%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50%, 0) scale(0.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes expandToRound {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }
+}
+
+@keyframes returnToOriginal {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 8px;
+    width: 500px;
+    height: auto;
+  }
+}
