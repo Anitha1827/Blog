@@ -10,6 +10,7 @@ const nextConfig = {
       "img.freepik.com",
     ],
   },
+  output: 'export',
 };
 
 export default nextConfig;
