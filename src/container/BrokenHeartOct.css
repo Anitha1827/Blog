@@ -1,0 +1,18 @@
+.container {
+    color: black;
+  }
+  
+  .title {
+    color: #D6336C; /* Equivalent to text-pink-600 */
+    font-weight: bold;
+  }
+  
+  .highlighted-text {
+    color: #D6336C; /* Equivalent to text-pink-600 */
+    font-weight: bold;
+  }
+  
+  .subheading {
+    font-weight: bold;
+  }
+  

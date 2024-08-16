@@ -28,7 +28,8 @@ import Birthdaycomingsoon from "@/container/Birthdaycomingsoon";
 import { Box, Modal } from "@mui/material";
 import StarEffect from "@/container/StarEffect";
 import Image from "next/image";
-import timeline from "@/container/data/timeline.json"
+import timeline from "@/container/data/timeline.json";
+import styles from "./Memories.module.css";
 
 const Memories = () => {
   const [open, setOpen] = useState(false);
@@ -71,9 +72,9 @@ const Memories = () => {
         : "returnToOriginal 0.8s ease-out",
   };
 
-  const handleOpen = (val:any) => {
+  const handleOpen = (val: any) => {
     try {
-      console.log(val); 
+      console.log(val);
       if (val && val.id) {
         setActive(val.id);
         setOpen(true);
@@ -134,19 +135,26 @@ const Memories = () => {
     }
   };
   //datas coming from timeline.json
-  const timelineData = timeline
+  const timelineData = timeline;
 
   return (
     <>
-      <div className="timeline-background">
-        <div className="stars">
-          <div className="star"></div>
-          <div className="star"></div>
-          <div className="star"></div>
-          <div className="star"></div>
-          <div className="star"></div>
+      <div className={styles.timelineBackground}>
+        <div className={styles.stars}>
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className={styles.star}
+              style={{
+                left: `${Math.random() * 100}vw`,
+                top: `${Math.random() * 100}vh`,
+                width: `${Math.random() * 3}px`,
+                height: `${Math.random() * 3}px`,
+              }}
+            ></div>
+          ))}
         </div>
-        <div className="clouds"></div>
+        <div className={styles.clouds}></div>
 
         <VerticalTimeline>
           {timelineData.map((val, idx) => (
@@ -156,14 +164,13 @@ const Memories = () => {
               contentStyle={{
                 background: "rgb(33, 150, 243)",
                 color: "#fff",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add shadow here
-                borderRadius: "8px", // Optional: Adds rounded corners
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                borderRadius: "8px",
               }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
+                borderRight: "7px solid rgb(33, 150, 243)",
               }}
               date={val.content}
-              iconStyle={{}}
               icon={
                 <Image
                   src={val.img}
@@ -171,7 +178,7 @@ const Memories = () => {
                   height={100}
                   alt="logo"
                   style={{ borderRadius: "20px", height: "100%" }}
-                ></Image>
+                />
               }
               visible={true}
             >
@@ -180,9 +187,9 @@ const Memories = () => {
                 {val.subtitle}
               </h4>
               <p>{val.content}</p>
-              <div className="float-right">
+              <div className={styles.floatRight}>
                 <button
-                  className="mt-4 px-4 py-2 bg-orange-500 text-white relative z-10 rounded hover:bg-orange-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className={styles.readMoreBtn}
                   id="read-more-btn"
                   onClick={() => handleOpen(val)}
                 >
@@ -194,7 +201,7 @@ const Memories = () => {
         </VerticalTimeline>
       </div>
 
-      <div className="py-20">
+      <div className={styles.py20}>
         <Modal
           open={open}
           onClose={handleClose}

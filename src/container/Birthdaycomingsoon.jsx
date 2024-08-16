@@ -1,93 +1,98 @@
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import "./Birthdaycomingsoon.css"
 
 const Birthdaycomingsoon = () => {
   return (
-    <div className='text-black'>
-      <Typography
-        id="modal-modal-title"
-        variant="h6"
-        component="h2"
-        className="text-pink-600 font-bold"
-      >
-        Birthday coming soon
-      </Typography>
-      <Typography>
-        <h1 className="font-bold">FEB 28 2023 6:00PM</h1>
-        <br />
-        <br />
-        Three important things went.
-        <ul>
-          <li>🎉 NEW YEAR</li>
-          <li>💑 Her Marraige Anniversary</li>
-          <li>💕 Valentines Day</li>
-        </ul>
-        <br />
-        New year, i went to her place. Drunk, Drived, Cried.. I messaged her.
-        She kept status for me( once i saw it, she will delete it ).
-        <br />
-        Marraige Anniversay! Usual celebration. But, lot happened inbetween.
-        After new year, i decided to block her. Since i cant able to stop
-        feelings. The instance i think of her, i start to kerala. it becomes a
-        habbit. Selfishly i keep on praying to meet her atleast once. Since she
-        didnt gave permission, i cant able to. So i asked her to block me or can
-        i block. She said NO!
-        <br />
-        <Image
-          src="https://10clove.wordpress.com/wp-content/uploads/2023/02/1.png"
-          width={600}
-          height={600}
-          alt="chat"
-        ></Image>
-        <br />
-        <br />
-        For the first time, i didnt listen to her. i was feeling harsh. i
-        blocked.
-        <br />
-        <br />
-        Days gone by, i got a normal message from regarding website doubt. Got
-        to know she is not well and having fever, and in hospital. I immediatly
-        unblocked her in whatsapp, contacted my cousin who is a doctor, and
-        asked her influential to do extra care in the hospital where princess
-        there.
-        <br />
-        <br />
-        <Image
-          src="https://10clove.wordpress.com/wp-content/uploads/2023/02/4.png"
-          alt="chat"
-          width={600}
-          height={600}
-        ></Image>
-        <br />
-        <br />
-        After a day, again i asked her, that i will block and blocked.
-        <br />
-        People may think, im kind of lunatic or stupid enough of this block and
-        unblock. Truth is, im very delicate for her. i dont want any problem to
-        be faced by her from my end. at the same time, if anything she needs, i
-        need to help her the maximum. struck between these two edges.
-        <br />
-        Its been month, no communication. No normal message. No Mail. Nothing..
-        Life goes.
-        <br />
-        <br />
-        After my relations, from my business end, my clients started to ask
-        about my marraige. Can solve or stop by my relations end. But, same cant
-        be done with clients. They ask me out of affection on me.
-        <br />
-        <br />
-        The stand on marriage still the same. I cant be true to the girl, in the
-        sense, princess memories will be always there. Hiding or acting like
-        showing love wont withstand. I dont want the mistake do by all others in
-        this regard. Even at one instance princess asked me to get married.
-        <br />
-        <br /><br />
-        <h1 className="font-bold text-red-600 text-3xl">
-          Her birthday coming soon.. To be continued...
-        </h1>
-      </Typography>
-    </div>
+    <div className="container">
+    <Typography
+      id="modal-modal-title"
+      variant="h6"
+      component="h2"
+      className="title"
+    >
+      Birthday coming soon
+    </Typography>
+    <Typography>
+      <h1 className="heading">FEB 28 2023 6:00PM</h1>
+      <br />
+      <br />
+      Three important things went.
+      <ul>
+        <li>🎉 NEW YEAR</li>
+        <li>💑 Her Marriage Anniversary</li>
+        <li>💕 Valentine`s Day</li>
+      </ul>
+      <br />
+      New year, I went to her place. Drunk, Drove, Cried.. I messaged her.
+      She kept a status for me (once I saw it, she would delete it).
+      <br />
+      Marriage Anniversary! Usual celebration. But, a lot happened in between.
+      After the new year, I decided to block her since I couldn’t stop my
+      feelings. The moment I think of her, I start to go to Kerala. It becomes a
+      habit. Selfishly I keep on praying to meet her at least once. Since she
+      didn`t give permission, I couldn’t do it. So I asked her to block me or
+      if I could block her. She said NO!
+      <br />
+      <Image
+        src="https://10clove.wordpress.com/wp-content/uploads/2023/02/1.png"
+        width={600}
+        height={600}
+        alt="chat"
+        className="image"
+      />
+      <br />
+      <br />
+      For the first time, I didn’t listen to her. I was feeling harsh. I
+      blocked her.
+      <br />
+      <br />
+      Days went by, and I got a normal message from her regarding a website
+      doubt. Got to know she was not well and had a fever, and was in the
+      hospital. I immediately unblocked her on WhatsApp, contacted my cousin
+      who is a doctor, and asked her to do extra care in the hospital where
+      the princess was.
+      <br />
+      <br />
+      <Image
+        src="https://10clove.wordpress.com/wp-content/uploads/2023/02/4.png"
+        alt="chat"
+        width={600}
+        height={600}
+        className="image"
+      />
+      <br />
+      <br />
+      After a day, I again asked her that I would block her and did it.
+      <br />
+      People may think I`m kind of a lunatic or stupid with this block and
+      unblock. The truth is, I`m very delicate about her. I don’t want her to
+      face any problems because of me. At the same time, if she needs anything,
+      I need to help her to the maximum. Stuck between these two edges.
+      <br />
+      It’s been a month, no communication. No normal messages. No mail. Nothing..
+      Life goes on.
+      <br />
+      <br />
+      After my relations, from my business end, my clients started to ask
+      about my marriage. I can solve or stop the questions from my relations,
+      but the same can’t be done with clients. They ask out of affection for me.
+      <br />
+      <br />
+      My stand on marriage is still the same. I can’t be true to any girl, in
+      the sense that the princess’s memories will always be there. Hiding or
+      acting like showing love won’t withstand. I don’t want to make the same
+      mistake others do in this regard. Even at one instance, the princess asked
+      me to get married.
+      <br />
+      <br /><br />
+      <h1 className="final-heading">
+        Her birthday coming soon.. To be continued...
+      </h1>
+    </Typography>
+  </div>
+  
   );
 };
 

@@ -1,0 +1,23 @@
+/* Standard CSS for the given JSX */
+.text-black {
+    color: black;
+  }
+  
+  .text-pink-600 {
+    color: #ec4899; /* Tailwind pink-600 color */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  h1.font-bold {
+    font-weight: bold;
+  }
+  
+  /* Handling line breaks */
+  br {
+    display: block;
+    content: "";
+  }
+  

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true, 
     domains: [
       "10clove.wordpress.com",
       "pepperdine-graphic.com",

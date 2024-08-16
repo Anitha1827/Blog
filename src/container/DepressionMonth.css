@@ -1,0 +1,23 @@
+.text-black {
+    color: #000;
+  }
+  
+  .text-pink-600 {
+    color: #d53f8c; /* Tailwind's pink-600 */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 1.25rem; /* Adjust size as needed */
+  }
+  
+  br {
+    display: block;
+    content: "";
+    margin: 1rem 0; /* Add space between breaks */
+  }
+  

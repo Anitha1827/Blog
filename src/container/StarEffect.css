@@ -1,0 +1,42 @@
+/* Container Styles */
+.relative {
+    position: relative;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /* Absolute positioning */
+  .absolute {
+    position: absolute;
+  }
+  
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* Star Styles */
+  .star {
+    width: 0.25rem; /* Equivalent to w-1 in Tailwind */
+    height: 0.25rem; /* Equivalent to h-1 in Tailwind */
+    background-color: white;
+    border-radius: 50%; /* Equivalent to rounded-full in Tailwind */
+    position: absolute;
+    transform: translate(
+      calc(var(--random-x) * 100vw),
+      calc(var(--random-y) * 100vh)
+    );
+  }
+  

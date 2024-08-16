@@ -1,0 +1,31 @@
+.container {
+    color: black;
+  }
+  
+  .title {
+    color: #D6336C; /* Equivalent to text-pink-600 */
+    font-weight: bold;
+  }
+  
+  .heading {
+    font-weight: bold;
+  }
+  
+  .videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Equivalent to min-h-screen */
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+  }
+  
+  .video {
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3); /* Equivalent to shadow-lg */
+  }
+  
+  .image {
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+  

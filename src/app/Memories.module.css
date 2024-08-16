@@ -1,0 +1,132 @@
+/* Timeline Background */
+.timelineBackground {
+  position: relative;
+  min-height: 100vh;
+  background: #000; /* Dark background for the stars and clouds effect */
+  overflow: hidden;
+}
+
+/* Stars */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure stars don't interfere with other interactions */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 2px; /* Small size for stars */
+  height: 2px; /* Small size for stars */
+  animation: twinkle 1.5s infinite alternate;
+  opacity: 0.8; /* Semi-transparent stars */
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Clouds */
+.clouds {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%; /* Width larger than the viewport to allow smooth scrolling */
+  height: 100%;
+  background: url(https://ugc.berkeley.edu/wp-content/uploads/2016/01/thunderstorm-3625405_1920.jpg) repeat;
+  opacity: 0.5; /* Semi-transparent clouds */
+  z-index: 0;
+  animation: moveClouds 30s linear infinite;
+}
+
+@keyframes moveClouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Vertical Timeline */
+.vertical-timeline-element--work {
+  margin: 20px 0;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1rem;
+  color: #eee;
+}
+
+.vertical-timeline-element-content {
+  background: rgb(33, 150, 243); /* Timeline element background */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.vertical-timeline-element-content::before {
+  border-right: 7px solid rgb(33, 150, 243); /* Arrow styling */
+}
+
+/* Button */
+.readMoreBtn {
+  background-color: #ec4899; /* Pink color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  background-color: #d53f8c; /* Darker pink for hover */
+}
+
+/* Float Right */
+.floatRight {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Modal */
+.py20 {
+  padding-top: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}

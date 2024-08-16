@@ -1,0 +1,22 @@
+.text-black {
+    color: #000;
+  }
+  
+  .text-pink-600 {
+    color: #ec4899;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .typography-title {
+    font-size: 1.25rem; /* Adjust the size as needed */
+    margin-bottom: 1rem; /* Spacing below the title */
+  }
+  
+  .typography-content {
+    font-size: 1rem; /* Adjust the size as needed */
+    line-height: 1.5; /* Adjust the line-height as needed */
+  }
+  

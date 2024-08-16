@@ -1,29 +1,24 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import "./SWEETVALENTINESDAY.css"
 
 const SWEETVALENTINESDAY = () => {
   return (
-    <div className='text-black'>
-      <Typography
-        id="modal-modal-title"
-        variant="h6"
-        component="h2"
-        className="text-pink-600 font-bold"
-      >
-        SWEET VALENTINE’S DAY
-      </Typography>
-      <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-        I just proposed her in a very.. What to say.. like Anniyan Ambi way.. i
-        just told this
-        <br />
-        “Dear ___, i tried much but i cant able. I LOVE YOU SO MUCH. But i am
-        not in good position. I am a hindu. If in case even i ready to convert
-        to christian, i dont know weather your family will accept me. I am
-        unlucky. And i miss you so much.”
+    <div class="content-container">
+      <h2 class="title">SWEET VALENTINE’S DAY</h2>
+      <p class="description">
+        I just proposed to her in a very... What to say... like Anniyan Ambi
+        way... I just told this
         <br />
         <br />
-        She said Nothing.
-      </Typography>
+        “Dear ___, I tried much but I can’t. I LOVE YOU SO MUCH. But I am not in
+        a good position. I am a Hindu. Even if I am ready to convert to
+        Christianity, I don’t know whether your family will accept me. I am
+        unlucky. And I miss you so much.”
+        <br />
+        <br />
+        She said nothing.
+      </p>
     </div>
   );
 };

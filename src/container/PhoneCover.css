@@ -1,0 +1,56 @@
+/* Standard CSS for the given JSX */
+.text-black {
+    color: black;
+  }
+  
+  .text-pink-600 {
+    color: #ec4899; /* Tailwind pink-600 color */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  h1.font-bold {
+    font-weight: bold;
+  }
+  
+  /* Handling line breaks */
+  br {
+    display: block;
+    content: "";
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-gray-200 {
+    background-color: #e5e7eb; /* Tailwind gray-200 color */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* iframe styling */
+  iframe {
+    border: 0;
+  }
+  

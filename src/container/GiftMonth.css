@@ -1,0 +1,18 @@
+/* Standard CSS for the given JSX */
+.text-black {
+    color: black;
+  }
+  
+  .text-pink-600 {
+    color: #ec4899; /* Tailwind pink-600 color */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  /* Assuming these classes are applied directly to elements, apply styles accordingly */
+  h1 {
+    font-weight: bold;
+  }
+  

@@ -1,9 +1,10 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import "./MArried.css";
 
 const MArried = () => {
   return (
-    <div className='text-black'>
+    <div className="text-black">
       <Typography
         id="modal-modal-title"
         variant="h6"

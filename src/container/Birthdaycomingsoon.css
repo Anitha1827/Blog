@@ -1,0 +1,24 @@
+.container {
+    color: black;
+  }
+  
+  .title {
+    color: #D6336C; /* Equivalent to text-pink-600 */
+    font-weight: bold;
+  }
+  
+  .heading {
+    font-weight: bold;
+  }
+  
+  .image {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .final-heading {
+    font-weight: bold;
+    color: #DC2626; /* Equivalent to text-red-600 */
+    font-size: 2rem; /* Equivalent to text-3xl */
+  }
+  

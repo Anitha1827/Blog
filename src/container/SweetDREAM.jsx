@@ -3,7 +3,7 @@ import React from "react";
 
 const SweetDREAM = () => {
   return (
-    <div className='text-black'>
+    <div className="text-black">
       <Typography
         id="modal-modal-title"
         variant="h6"
@@ -16,13 +16,13 @@ const SweetDREAM = () => {
         <h1 className="font-bold">OCT 21 2021</h1>
         <br />
         <br />
-        Today morning is my happiest day. i had a long dream of her. the dream
+        Today morning is my happiest day. I had a long dream of her. The dream
         was,
         <br />
-        it was college last day. everyone getting assembled to ground. i am keep
-        on trying to see her in her classroom. And once people started to
-        getting out from class, i finally saw her. precious moment it was. I
-        can’t express in words how i felt. 😓..
+        It was the last day of college. Everyone was getting assembled on the
+        ground. I kept trying to see her in her classroom. And once people
+        started to get out of class, I finally saw her. It was a precious
+        moment. I can’t express in words how I felt. 😓
       </Typography>
     </div>
   );
